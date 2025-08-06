@@ -1,0 +1,22 @@
+{
+  "name": "sauce-demo-playwright-tests",
+  "version": "1.0.0",
+  "description": "Automated test suite using Playwright for Sauce Demo.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardogrcia/sauce-demo-playwright-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonardogrcia/sauce-demo-playwright-tests/issues"
+  },
+  "homepage": "https://github.com/leonardogrcia/sauce-demo-playwright-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.2.0"
+  }
+}
