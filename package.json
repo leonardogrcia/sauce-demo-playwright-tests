@@ -3,13 +3,23 @@
   "version": "1.0.0",
   "description": "Automated test suite using Playwright for Sauce Demo.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leonardogrcia/sauce-demo-playwright-tests.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "playwright",
+    "automation",
+    "e2e",
+    "sauce demo",
+    "javascript"
+  ],
+  "author": "Leonardo Garcia",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leonardogrcia/sauce-demo-playwright-tests/issues"
