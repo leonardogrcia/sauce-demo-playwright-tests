@@ -14,6 +14,7 @@ export class InventoryPage {
     this.firstAddToCartButton = page.locator(
       '[data-test="add-to-cart-sauce-labs-backpack"]'
     );
+    this.productPrices = page.locator(".inventory_item_price");
   }
 
   async isOnInventoryPage() {
@@ -24,25 +25,26 @@ export class InventoryPage {
 
   async logout() {
     await this.menuButton.click();
-
     await expect(this.logoutLink).toBeVisible();
-
     await this.logoutLink.click();
-
     await expect(this.page).toHaveURL("https://www.saucedemo.com/");
   }
 
   async addFirstProductToCart() {
     await expect(this.firstAddToCartButton).toBeVisible();
+    await expect(this.firstAddToCartButton).toBeEnabled();
     await this.firstAddToCartButton.click();
-
     await expect(this.cartBadge).toBeVisible();
   }
 
   async goToCart() {
     await expect(this.cartLink).toBeVisible();
     await this.cartLink.click();
-
     await expect(this.page).toHaveURL(/.*cart/);
+  }
+
+  async getProductPrices() {
+    const pricesText = await this.productPrices.allTextContents();
+    return pricesText.map((price) => parseFloat(price.replace("$", "")));
   }
 }
