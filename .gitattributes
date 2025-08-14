@@ -1,0 +1,30 @@
+# Padroniza final de linha para LF em todos os arquivos de texto
+* text=auto eol=lf
+
+# Arquivos JavaScript
+*.js text eol=lf
+
+# Arquivos de teste Playwright
+*.spec.js text eol=lf
+*.test.js text eol=lf
+
+# Arquivos JSON
+*.json text eol=lf
+
+# Arquivos HTML e CSS
+*.html text eol=lf
+*.css text eol=lf
+
+# Arquivos Markdown
+*.md text eol=lf
+
+# Ignorar binários para não alterar final de linha
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary

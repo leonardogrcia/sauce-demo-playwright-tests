@@ -44,6 +44,7 @@ export class InventoryPage {
   }
 
   async getProductPrices() {
+    //vamos pegar o preço dos produtos no site
     const pricesText = await this.productPrices.allTextContents();
     return pricesText.map((price) => parseFloat(price.replace("$", "")));
   }

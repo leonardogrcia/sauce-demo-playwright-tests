@@ -1,4 +1,5 @@
 export class CartPage {
+  //pagina do carrinho
   /**
    * @param {import('@playwright/test').Page} page
    */
