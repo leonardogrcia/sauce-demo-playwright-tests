@@ -1,6 +1,6 @@
 sauce-demo-playwright-tests
 
-Automated test suite using Playwright for Sauce Demo.
+automated test suite using Playwright for Sauce Demo.
 
 📌 Descrição
 
